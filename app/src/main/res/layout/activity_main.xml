@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4CAF50"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:cardCornerRadius="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter_Your_Name"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        android:inputType="text"
+        android:id="@+id/edtname"
+        />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Number"
+        android:backgroundTint="@color/white"
+        android:textColorHint="@color/white"
+        android:layout_marginHorizontal="20dp"
+        android:drawableStart="@drawable/baseline_local_phone_24"
+        android:drawableTint="@color/white"
+        android:drawablePadding="10dp"
+        android:inputType="phone"
+        android:layout_marginTop="20dp"
+        android:id="@+id/edtNumber"
+        />
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Follow our term and conditions"
+        android:layout_gravity="center"
+        android:textColor="@color/white"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="20dp"
+        android:layout_gravity="center"
+        android:id="@+id/cardButtom"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/baseline_arrow_forward_24"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            app:tint="@color/black"
+            />
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
